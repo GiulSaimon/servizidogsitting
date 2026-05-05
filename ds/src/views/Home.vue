@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-const primaryColor = '#ff54b0'
+const primaryColor = '#d44692'
 
 const servizi = [
   'Sessione educativa a partire da 30 €',
