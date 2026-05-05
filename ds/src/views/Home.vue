@@ -31,13 +31,12 @@
 
             <v-divider class="mb-6"></v-divider>
 
-            <h2 class="text-h6 font-weight-bold mb-4" :style="{ color: primaryColor }">
-              Disponibile per
-            </h2>
+            <h2 class="text-h6 font-weight-bold mb-4" :style="{ color: primaryColor }">Disponibile per</h2>
 
             <v-list density="comfortable" bg-color="transparent">
                 <v-list-item v-for="(item, i) in servizi" :key="i">
                   <v-list-item-title>
+                      <v-icon class="mr-2" icon="mdi-paw"></v-icon>
                       <span v-html="item"></span>
                   </v-list-item-title>
                 </v-list-item>
@@ -71,13 +70,13 @@
 </template>
 
 <script setup>
-const primaryColor = '#6D8B74'
+const primaryColor = '#800000'
 
 const servizi = [
-  '--- Sessione educativa a partire da 30 €',
-  '--- Percorsi educativi base a partire da 130 € (pacchetto da 5 lezioni)',
-  '--- Passeggiate pomeridiane/serali o weekend a partire da 10 €/h',
-  '--- Dog Sitter tutto il giorno o mezze giornate: prezzo da concordare'
+  'Sessione educativa a partire da 30 €',
+  'Percorsi educativi base a partire da 130 € (pacchetto da 5 lezioni)',
+  'Passeggiate pomeridiane/serali o weekend a partire da 10 €/h',
+  'Dog Sitter tutto il giorno o mezze giornate: prezzo da concordare'
 ]
 </script>
 
